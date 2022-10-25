@@ -1,2 +1,2 @@
 # programmers
-my solution
+프로그래머스 문제 솔루션
