@@ -1,4 +1,10 @@
-# 
+# 두 수의 나눗셈
+# def solution(num1, num2):
+#     answer = int((num1 / num2) * 1000)
+#     return answer
+
+def solution(num1, num2):
+    return int((num1 / num2) * 1000)
 
 # 숫자 비교하기
 # def solution(num1, num2):
