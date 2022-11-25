@@ -30,4 +30,30 @@ def solution(before, after):
 def solution(i, j, k):
     return sum([str(x).count(str(k)) for x in range(i,j+1)])
   
-# 
+# 치킨 쿠폰
+# def solution(chicken):
+#     answer = 0
+#     coupon = 0
+#     while chicken>0:
+#         answer += chicken
+#         coupon += chicken%10
+#         if coupon>=10:
+#             answer += 1
+#             coupon -= 10
+#         chicken = chicken//10
+#     return answer//10
+
+# def solution(chicken):
+#     answer = 0
+#     coupon = 0
+#     while chicken>0:
+#         answer += divmod(chicken,10)[0]
+#         coupon += divmod(chicken,10)[1]
+#         if coupon>=10:
+#             answer += 1
+#         chicken = chicken//10
+#     return answer
+
+def solution(chicken):
+    answer = (max(chicken,1)-1)//9
+    return answer
