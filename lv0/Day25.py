@@ -9,3 +9,7 @@
 #     return answer
 
 solution=lambda a,b:(b*2).find(a)
+
+# 종이 자르기
+def solution(M, N):
+    return M*N-1
