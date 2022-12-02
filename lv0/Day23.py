@@ -1,4 +1,10 @@
 # 특이한 정렬
+#def solution(numlist, n):
+#    numlist.sort(reverse=True)
+#    return sorted(numlist, key=lambda x:abs(x-n))
+
+def solution(numlist, n):
+    return sorted(numlist, key=lambda x:(abs(x-n),-x))
 
 # 등수 매기기
 def solution(score):
