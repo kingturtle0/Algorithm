@@ -15,7 +15,17 @@ def solution(n):
 
 
 # 겹치는 선분의 길이
+# def solution(lines):
+#     answer = [[] for _ in range(200)]
+#     for idx, line in enumerate(lines):
+#         x, y = line
+#         for i in range(x, y):
+#             answer[i+100].append(idx)
+#     return len([i for i in answer if len(i)>1])
 
+def solution(lines):
+    sets = [set(range(min(l), max(l))) for l in lines]
+    return len(sets[0] & sets[1] | sets[0] & sets[2] | sets[1] & sets[2])
 
 # 유한소수 판별하기
 # def greatest_common_divisor(x, y):
