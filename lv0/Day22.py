@@ -12,7 +12,24 @@ def solution(n):
     return answer
 
 # 평행
+# def solution(dots):
+#     answer = [(dots[i][1]-dots[j][1])/(dots[i][0]-dots[j][0]) for i in range(len(dots)) for j in range(i+1,len(dots))]
+#     if len(answer)==len(set(answer)):
+#         return 0
+#     else:
+#         return 1
 
+from itertools import combinations
+
+def solution(dots):
+    a = []
+    for (x1,y1),(x2,y2) in combinations(dots,2):
+        a.append((y2-y1,x2-x1))
+
+    for (x1,y1),(x2,y2) in combinations(a,2):
+        if x1*y2==x2*y1:
+            return 1
+    return 0
 
 # 겹치는 선분의 길이
 # def solution(lines):
