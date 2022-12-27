@@ -1,2 +1,2 @@
-# programmers
-프로그래머스 파이썬 솔루션
+# Python 연습
+Programmers & Baekjoon Python Practice
