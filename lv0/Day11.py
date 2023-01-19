@@ -43,16 +43,21 @@ def solution(numbers):
 #         result *= i
 #     return result
 
+def factorial(num): #재귀함수 팩토리얼
+    if n == 0:
+        return 1
+    return n * factorial(num)
+
 # def solution(n):
 #     answer = 0
 #     while n>=factorial(answer):
 #         answer += 1
 #     return answer-1
 
-from math import factorial
+#from math import factorial
 
-def solution(n):
-    k = 10
-    while n < factorial(k):
-        k -= 1
-    return k
+# def solution(n):
+#    k = 10
+#    while n < factorial(k):
+#        k -= 1
+#    return k
