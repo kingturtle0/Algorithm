@@ -1,5 +1,5 @@
 n = input()
-numbers = list(n)
+numbers = list(input())
 sum = 0
 for number in numbers:
     sum += int(number)
