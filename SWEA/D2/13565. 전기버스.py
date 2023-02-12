@@ -26,3 +26,34 @@ for test_case in range(1, T + 1):
             break
 
     print(f'#{test_case} {min_charge}')
+
+
+# other way
+T = int(input())
+
+for tc in range(1, T + 1):
+    k, n, m = map(int, input().split())
+
+    stations = [0]*(n+1)
+    for idx in map(int, input().split()):
+        stations[idx] += 1
+
+    cnt = 0
+    limit = 0
+    location = 0
+    while location < n:
+        if stations[location+k-limit] == 1:
+            location += k - limit
+            cnt += 1
+            limit = 0
+        else:
+            limit += 1
+
+        if location+k-limit >= n:
+            break
+
+        if limit == k:
+            cnt = 0
+            break
+
+    print(f'#{tc}', cnt)
