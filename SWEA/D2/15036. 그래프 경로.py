@@ -1,6 +1,5 @@
 T = int(input())
 
-
 def dfs(start):
     for i in range(V):
         if arr[start][i] == 1 and visit[i] == 0:
