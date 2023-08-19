@@ -1,0 +1,6 @@
+N = int(input())
+M = int(input())
+print(N*int(str(M)[2]))
+print(N*int(str(M)[1]))
+print(N*int(str(M)[0]))
+print(N*M)
